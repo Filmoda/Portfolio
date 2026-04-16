@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
        Smooth Scrolling
        ========================================= */
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
             const targetElement = document.querySelector(targetId);
@@ -147,7 +147,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function triggerVideo() {
-            if (inlineVideo) inlineVideo.classList.add('active');
+            if (inlineVideo) {
+                inlineVideo.classList.add('active');
+                const video = document.getElementById('launcherVideo');
+                if (video) {
+                    video.currentTime = 0;
+                    video.play().catch(e => console.warn("Autoplay blocked or video missing:", e));
+                }
+            }
         }
     }
 
@@ -158,77 +165,165 @@ document.addEventListener('DOMContentLoaded', () => {
         animation: {
             label: 'Animation',
             items: [
-                { title: 'Cinematic Channel Intro', tag: 'Animation', bg: 'linear-gradient(45deg, #4b6cb7, #182848)' },
-                { title: 'Logo Reveal Loop', tag: 'Animation', bg: 'linear-gradient(45deg, #1a1a2e, #16213e)' },
-                { title: 'Particle Burst Outro', tag: 'Animation', bg: 'linear-gradient(45deg, #0f3443, #34e89e)' },
-                { title: 'Glitch Title Sequence', tag: 'Animation', bg: 'linear-gradient(45deg, #200122, #6f0000)' },
-                { title: '3D Product Spin', tag: 'Animation', bg: 'linear-gradient(45deg, #1a1a1a, #4b4b4b)' },
+                {
+                    title: 'Antigravity Intro',
+                    tag: 'Animation',
+                    bg: '#111',
+                    poster: 'IMG/Logos/AntiGravity.jpg',
+                    video: 'https://youtube.com/shorts/adCad0sZMP0',
+                    versions: ['https://youtube.com/shorts/adCad0sZMP0']
+                },
+                {
+                    title: 'Filmoda Animation',
+                    tag: 'Animation',
+                    bg: '#111',
+                    poster: 'IMG/Logos/Filmoda.jpg',
+                    video: 'https://youtu.be/MyT1gnJpnII',
+                    versions: ['https://youtu.be/MyT1gnJpnII',
+                        'https://youtu.be/WGPTZSUJABE',
+                        'https://youtu.be/3_czaDVTWLk'
+                    ]
+                },
+                {
+                    title: 'Number 2 Animate',
+                    tag: 'Animation',
+                    bg: '#111',
+                    poster: 'IMG/Logos/2animate.jpg',
+                    video: 'https://youtu.be/zRH8s_viDSs',
+                    versions: ['https://youtu.be/zRH8s_viDSs']
+                },
+                {
+                    title: 'ColorfY',
+                    tag: 'Animation',
+                    bg: '#111',
+                    poster: 'IMG/Logos/ColorfY.jpg',
+                    video: 'https://youtu.be/H5JBIq2Dae8',
+                    versions: ['https://youtu.be/H5JBIq2Dae8',
+                        'https://youtu.be/g30ESQVCtwI'
+                    ]
+                },
+                {
+                    title: 'B Games',
+                    tag: 'Animation',
+                    bg: '#111',
+                    poster: 'IMG/Logos/JujutsuEyeLogo.jpg',
+                    video: 'https://youtu.be/IxE3TR7PaZ4',
+                    versions: ['https://youtu.be/IxE3TR7PaZ4',
+                        'https://youtu.be/fpxK-nvLZkU']
+                },
+                {
+                    title: 'WheelOtto',
+                    tag: 'Animation',
+                    bg: '#111',
+                    poster: 'IMG/Logos/wheelbarrow.jpg',
+                    video: 'videos/Animations/Filmoda Animation/FilmodaAnimation.mp4',
+                    versions: ['videos/Animations/Filmoda Animation/FilmodaAnimation.mp4']
+                },
+                {
+                    title: 'Two Love Intro',
+                    tag: 'Animation',
+                    bg: '#111',
+                    poster: 'IMG/Logos/twolove.jpg',
+                    video: 'https://youtu.be/71TBaXYBjYs',
+                    versions: [
+                        'https://youtu.be/71TBaXYBjYs',
+                        'https://youtu.be/Q6vkRAlyO9s',
+                        'https://youtu.be/xRqQK6Fnzzk'
+                    ]
+                }
             ]
         },
         youtube: {
             label: 'YouTube',
             items: [
-                { title: 'Tech Unboxed S3', tag: 'YouTube', bg: 'linear-gradient(45deg, #141e30, #243b55)' },
-                { title: 'Vlog — Japan 2024', tag: 'YouTube', bg: 'linear-gradient(45deg, #1d1d1d, #e96c4c)' },
-                { title: 'Game Dev Devlog', tag: 'YouTube', bg: 'linear-gradient(45deg, #232526, #414345)' },
-                { title: 'Podcast Highlight Reel', tag: 'YouTube', bg: 'linear-gradient(45deg, #0f2027, #203a43)' },
+                {
+                    title: 'Aot War Remake', tag: 'YouTube', bg: 'linear-gradient(45deg, #141e30, #243b55)',
+                    poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
+                    video: 'https://youtu.be/akFZ3tEj-Fk'
+                },
+                {
+                    title: 'Distort Effects Tutorial', tag: 'YouTube', bg: 'linear-gradient(45deg, #1d1d1d, #e96c4c)',
+                    poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
+                    video: 'https://youtu.be/ywIvSykoXNY'
+                },
+                {
+                    title: 'Akatsuki Members', tag: 'YouTube', bg: 'linear-gradient(45deg, #232526, #414345)',
+                    poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
+                    video: 'https://youtu.be/U6PNdijVDG8'
+                }
             ]
         },
         logo: {
             label: 'Logo & Brand',
             items: [
-                { title: 'Vortex Esports Identity', tag: 'Logo', bg: 'linear-gradient(45deg, #1d976c, #93f9b9)' },
-                { title: 'NeonCraft Studio', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)' },
-                { title: 'Apex Fitness', tag: 'Logo', bg: 'linear-gradient(45deg, #f7971e, #ffd200)' },
-                { title: 'Void Records', tag: 'Logo', bg: 'linear-gradient(45deg, #0f0c29, #302b63)' },
+                { title: 'Filmoda', tag: 'Logo', bg: 'linear-gradient(45deg, #1d976c, #93f9b9)', poster: 'IMG/Logos/Filmoda.jpg', },
+                { title: 'Two Love', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', poster: 'IMG/Logos/twolove.jpg', },
+                { title: 'Number 2', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', poster: 'IMG/Logos/2animate.jpg', },
+                { title: 'ColorfY', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', poster: 'IMG/Logos/ColorfY.jpg', },
+                { title: 'Antigravity', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', poster: 'IMG/Logos/AntiGravity.jpg', },
+                { title: 'wheelbarrow', tag: 'Logo', bg: 'linear-gradient(45deg, #f7971e, #ffd200)', poster: 'IMG/Logos/wheelbarrow.jpg', },
+                { title: 'JujutsuEyeLogo', tag: 'Logo', bg: 'linear-gradient(45deg, #0f0c29, #302b63)', poster: 'IMG/Logos/JujutsuEyeLogo.jpg', },
             ]
         },
         art: {
             label: 'Visual Art',
             items: [
-                { title: 'Dusk Gradient Series', tag: 'Art', bg: 'linear-gradient(120deg, #f6d365, #fda085)' },
-                { title: 'Aqua Forms', tag: 'Art', bg: 'linear-gradient(120deg, #84fab0, #8fd3f4)' },
-                { title: 'Neon Bloom', tag: 'Art', bg: 'linear-gradient(120deg, #fccb90, #d57eeb)' },
-                { title: 'Cloud Pastel', tag: 'Art', bg: 'linear-gradient(120deg, #e0c3fc, #8ec5fc)' },
-                { title: 'Crimson Abstract', tag: 'Art', bg: 'linear-gradient(120deg, #f093fb, #f5576c)' },
+                {
+                    title: 'Aot Final Dose',
+                    tag: 'Art', bg: 'linear-gradient(120deg, #f6d365, #fda085)',
+                    poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
+                    video: 'https://youtu.be/pT9IZmD40Sk'
+                },
+                {
+                    title: 'Filmoda Keys',
+                    tag: 'Art', bg: 'linear-gradient(120deg, #f6d365, #fda085)',
+                    poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
+                    video: 'https://youtu.be/W2phw46niOM'
+                },
+
             ]
         },
         reels: {
             label: 'Reels & Shorts',
             items: [
-                { title: 'Gaming Reel 2024', tag: 'Reels', bg: 'linear-gradient(45deg, #30cfd0, #330867)' },
-                { title: 'Fashion Week Edit', tag: 'Reels', bg: 'linear-gradient(45deg, #f7797d, #FBD786)' },
-                { title: 'Sports Highlights', tag: 'Reels', bg: 'linear-gradient(45deg, #134E5E, #71B280)' },
-                { title: 'Travel Montage', tag: 'Reels', bg: 'linear-gradient(45deg, #5614B0, #DBD65C)' },
+                {
+                    title: 'Lamine Yamal Goal', tag: 'Reels', bg: 'linear-gradient(45deg, #30cfd0, #330867)',
+                    poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
+                    video: 'https://youtube.com/shorts/4wPp3IhVHSQ'
+                },
+                {
+                    title: 'Share of Global Births', tag: 'Reels', bg: 'linear-gradient(45deg, #30cfd0, #330867)',
+                    poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
+                    video: 'https://youtu.be/hwKcyZzpVJs'
+                },
+                {
+                    title: 'AlJazzira Under Pressure', tag: 'Reels', bg: 'linear-gradient(45deg, #30cfd0, #330867)',
+                    poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
+                    video: 'https://youtube.com/shorts/EaoAagVVSy8'
+                },
+                {
+                    title: 'Ramadan Kareem', tag: 'Reels', bg: 'linear-gradient(45deg, #f7797d, #FBD786)',
+                    poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
+                    video: 'https://youtube.com/shorts/0ud6Y6nFQ7U'
+                }
             ]
         },
         music: {
             label: 'Music Videos',
             items: [
-                { title: 'Neon Souls', tag: 'Music Video', bg: 'linear-gradient(45deg, #fc4a1a, #f7b733)' },
-                { title: 'Midnight Drive', tag: 'Music Video', bg: 'linear-gradient(45deg, #1a1a2e, #e94560)' },
-                { title: 'Echo Chamber', tag: 'Music Video', bg: 'linear-gradient(45deg, #0d0d0d, #0047ab)' },
-                { title: 'Ultraviolet', tag: 'Music Video', bg: 'linear-gradient(45deg, #3d0066, #ff00cc)' },
+
             ]
         },
         shop: {
             label: 'Shop',
             items: [
-                { title: 'Transitions Pack V1', tag: 'Pack', bg: 'linear-gradient(45deg, #ff9966, #ff5e62)', price: '$19.99' },
-                { title: 'Cyberpunk Titles', tag: 'Pack', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', price: '$14.99' },
+
             ]
         }
     };
 
     const MOGRTS_DATA = [
-        { title: 'Smooth Zoom Transitions', price: '$12.99', compat: 'Pr Pro CC+', bg: 'linear-gradient(135deg,#1a1a2e,#16213e)', icon: '⚡' },
-        { title: 'Glitch Text Titles', price: '$9.99', compat: 'Pr Pro CC+', bg: 'linear-gradient(135deg,#200122,#6f0000)', icon: '💥' },
-        { title: 'Cinematic Bars Pack', price: '$7.99', compat: 'Pr Pro CC+', bg: 'linear-gradient(135deg,#0f2027,#203a43)', icon: '🎬' },
-        { title: 'Social Media Lower Thirds', price: '$14.99', compat: 'Pr Pro CC+', bg: 'linear-gradient(135deg,#1d976c,#93f9b9)', icon: '📱' },
-        { title: 'Neon Glow Overlays', price: '$11.99', compat: 'AE + Pr Pro', bg: 'linear-gradient(135deg,#3d0066,#ff00cc)', icon: '✨' },
-        { title: 'Typewriter Captions', price: '$6.99', compat: 'Pr Pro CC+', bg: 'linear-gradient(135deg,#134E5E,#71B280)', icon: '⌨️' },
-        { title: 'Liquid Motion Pack', price: '$16.99', compat: 'AE + Pr Pro', bg: 'linear-gradient(135deg,#f7797d,#FBD786)', icon: '🌊' },
-        { title: 'VHS Retro Effects', price: '$8.99', compat: 'Pr Pro CC+', bg: 'linear-gradient(135deg,#232526,#ff6b6b)', icon: '📼' },
+
     ];
 
     /* =========================================
@@ -243,11 +338,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeHubBtn = document.getElementById('closeHub');
     const hubIcons = document.querySelectorAll('.hub-icon');
 
-    let currentCategory = 'animation';
+    let currentCategory = 'logo';
 
     function openHub(category) {
         if (!hub) return;
-        currentCategory = category || 'animation';
+        currentCategory = category || 'logo';
         loadHubCategory(currentCategory);
         hub.classList.add('active');
         document.body.style.overflow = 'hidden';
@@ -285,15 +380,50 @@ document.addEventListener('DOMContentLoaded', () => {
                 const card = document.createElement('div');
                 card.className = 'hub-card';
                 card.style.animationDelay = `${i * 0.06}s`;
-                card.innerHTML = `
-                    <div class="hub-thumb" style="background:${item.bg};">
+
+                let mediaHTML = '';
+                let badgeHTML = '';
+                if (item.versions && item.versions.length > 1) {
+                    badgeHTML = `<span class="version-badge">${item.versions.length}</span>`;
+                }
+
+                const isYouTube = item.video && (item.video.includes('youtu.be') || item.video.includes('youtube.com'));
+
+                if (item.video && !isYouTube) {
+                    const posterAttr = item.poster ? `poster="${item.poster}"` : '';
+                    mediaHTML = `
+                        <video class="hub-thumb-video" muted playsinline preload="metadata" ${posterAttr}>
+                            <source src="${item.video}" type="video/mp4">
+                        </video>
                         <span class="hub-thumb-tag">${item.tag}</span>
+                        ${badgeHTML}
+                        <div class="play-overlay">▶</div>
+                    `;
+                } else if (item.poster) {
+                    mediaHTML = `
+                        <img src="${item.poster}" class="hub-thumb-img" alt="${item.title}">
+                        <span class="hub-thumb-tag">${item.tag}</span>
+                        ${badgeHTML}
+                        ${item.video ? '<div class="play-overlay">▶</div>' : ''}
+                    `;
+                } else {
+                    mediaHTML = `<span class="hub-thumb-tag">${item.tag}</span>`;
+                }
+
+                card.innerHTML = `
+                    <div class="hub-thumb" style="background:${item.bg || '#111'};">
+                        ${mediaHTML}
                     </div>
                     <div class="hub-card-info">
                         <h4>${item.title}</h4>
                         ${item.price ? `<p class="hub-card-price">${item.price}</p>` : ''}
                     </div>
                 `;
+
+                if (item.video || item.poster) {
+                    card.addEventListener('click', () => openVideoModal(data.items, i));
+                }
+
                 hubGrid.appendChild(card);
             });
 
@@ -362,9 +492,170 @@ document.addEventListener('DOMContentLoaded', () => {
         closeHubBtn.addEventListener('click', closeHub);
     }
 
-    // ESC key closes hub
+    // ESC key closes hub or video modal
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && hub.classList.contains('active')) closeHub();
+        if (e.key === 'Escape') {
+            if (videoModal && videoModal.classList.contains('active')) {
+                closeVideoDetails();
+            } else if (hub.classList.contains('active')) {
+                closeHub();
+            }
+        }
     });
+
+    /* =========================================
+       Video Modal Logic
+       ========================================= */
+    const videoModal = document.getElementById('videoModal');
+    const videoModalContent = document.getElementById('videoModalContent');
+    const closeVideoBtn = document.getElementById('closeVideoModal');
+    const mainModalVideo = document.getElementById('mainModalVideo');
+    const youtubeIframe = document.getElementById('youtubeIframe');
+    const mainModalImg = document.getElementById('mainModalImg');
+    const versionsContainer = document.getElementById('versionsContainer');
+    const prevVideoBtn = document.getElementById('prevVideoModal');
+    const nextVideoBtn = document.getElementById('nextVideoModal');
+
+    let currentModalItems = [];
+    let currentModalIndex = 0;
+
+    function extractYouTubeId(url) {
+        if (!url) return null;
+        if (url.includes('youtu.be/')) {
+            return url.split('youtu.be/')[1].split('?')[0];
+        } else if (url.includes('youtube.com/watch?v=')) {
+            return url.split('v=')[1].split('&')[0];
+        } else if (url.includes('youtube.com/shorts/')) {
+            return url.split('youtube.com/shorts/')[1].split('?')[0];
+        }
+        return null;
+    }
+
+    function playModalSource(item, src) {
+        // Reset displays
+        mainModalVideo.style.display = 'none';
+        mainModalVideo.pause();
+        if (youtubeIframe) {
+            youtubeIframe.style.display = 'none';
+            youtubeIframe.src = '';
+        }
+        if (mainModalImg) {
+            mainModalImg.style.display = 'none';
+            mainModalImg.src = '';
+        }
+
+        // Adjust aspect ratio based on category/tag/src
+        const isReel = item.tag === 'Reels' || (src && src.includes('youtube.com/shorts/'));
+        if (videoModalContent) {
+            if (isReel) {
+                videoModalContent.classList.remove('landscape');
+            } else {
+                videoModalContent.classList.add('landscape');
+            }
+        }
+
+        if (!src) {
+            // It's an image only (e.g. Logo without video)
+            if (mainModalImg && item.poster) {
+                mainModalImg.src = item.poster;
+                mainModalImg.style.display = 'block';
+            }
+            return;
+        }
+
+        const isYouTube = src && (src.includes('youtu.be') || src.includes('youtube.com'));
+        if (isYouTube) {
+            const ytId = extractYouTubeId(src);
+            if (youtubeIframe && ytId) {
+                youtubeIframe.style.display = 'block';
+                youtubeIframe.src = `https://www.youtube.com/embed/${ytId}?autoplay=1`;
+            }
+        } else {
+            mainModalVideo.style.display = 'block';
+            mainModalVideo.src = src;
+            mainModalVideo.play().catch(e => console.warn("Auto-play prevented", e));
+        }
+    }
+
+    function openVideoModal(items, index) {
+        if (!videoModal) return;
+        currentModalItems = items;
+        currentModalIndex = index;
+        const item = items[index];
+
+        videoModal.classList.add('active');
+
+        // Allow navigation
+        if (prevVideoBtn) prevVideoBtn.style.display = index > 0 ? 'flex' : 'none';
+        if (nextVideoBtn) nextVideoBtn.style.display = index < items.length - 1 ? 'flex' : 'none';
+
+        // Find main source from versions or fallback to video
+        let mainSrc = item.versions && item.versions.length > 0 ? item.versions[0] : item.video;
+        playModalSource(item, mainSrc || null);
+
+        versionsContainer.innerHTML = '';
+        if (item.versions && item.versions.length > 1) {
+            item.versions.forEach((verSrc, idx) => {
+                const thumb = document.createElement('div');
+                thumb.className = 'version-thumb' + (idx === 0 ? ' active' : '');
+
+                const isYt = verSrc.includes('youtu.be') || verSrc.includes('youtube.com');
+                if (!isYt) {
+                    thumb.innerHTML = `
+                        <video muted playsinline preload="metadata">
+                            <source src="${verSrc}" type="video/mp4">
+                        </video>
+                        <span class="version-lbl">V${idx + 1}</span>
+                    `;
+                } else {
+                    const ytId = extractYouTubeId(verSrc);
+                    if (ytId) {
+                        thumb.innerHTML = `
+                            <img src="https://img.youtube.com/vi/${ytId}/hqdefault.jpg" style="width:100%; height:100%; object-fit:cover;" />
+                            <span class="version-lbl">V${idx + 1}</span>
+                        `;
+                    }
+                }
+
+                thumb.addEventListener('click', () => {
+                    document.querySelectorAll('.version-thumb').forEach(t => t.classList.remove('active'));
+                    thumb.classList.add('active');
+                    playModalSource(item, verSrc);
+                });
+                versionsContainer.appendChild(thumb);
+            });
+        }
+    }
+
+    if (prevVideoBtn) {
+        prevVideoBtn.addEventListener('click', () => {
+            if (currentModalIndex > 0) openVideoModal(currentModalItems, currentModalIndex - 1);
+        });
+    }
+
+    if (nextVideoBtn) {
+        nextVideoBtn.addEventListener('click', () => {
+            if (currentModalIndex < currentModalItems.length - 1) openVideoModal(currentModalItems, currentModalIndex + 1);
+        });
+    }
+
+    if (closeVideoBtn) {
+        closeVideoBtn.addEventListener('click', closeVideoDetails);
+    }
+
+    function closeVideoDetails() {
+        if (!videoModal) return;
+        videoModal.classList.remove('active');
+        if (mainModalVideo) {
+            mainModalVideo.pause();
+            mainModalVideo.src = '';
+        }
+        if (youtubeIframe) {
+            youtubeIframe.src = '';
+        }
+        if (mainModalImg) {
+            mainModalImg.src = '';
+        }
+    }
 
 });

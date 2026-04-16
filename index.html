@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="FilmodaTrans.png">
+    <link rel="icon" type="image/png" href="IMG\Media\Filmoda.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Creative Video Editor & Artist Portfolio">
@@ -37,7 +37,11 @@
     <!-- Interactive Video Launcher -->
     <section class="video-launcher-section">
         <div class="inline-video-template" id="inlineVideo">
-            <span class="video-label">VIDEO PLACEHOLDER</span>
+            <video id="launcherVideo" loop muted playsinline>
+                <source src="videos/cinematic.mp4" type="video/mp4">
+                <source src="videos/cinematic.mp4" type="video/mp4">
+            </video>
+            <span class="video-label">CINEMATIC REVEAL</span>
             <div class="launcher-container fade-in-up">
                 <div class="launcher-track">
                     <div class="launcher-ball" id="dragBall"></div>
@@ -63,32 +67,74 @@
 
                 <!-- Sidebar -->
                 <nav class="hub-sidebar">
-                    <button class="hub-icon active" data-category="animation" title="Animation">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+                    <button class="hub-icon active" data-category="logo" title="Logo">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <span>LOG</span>
+                    </button>
+                    <button class="hub-icon" data-category="animation" title="Animation">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="3" />
+                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+                            <path d="M4.93 4.93a10 10 0 0 0 0 14.14" />
+                        </svg>
                         <span>ANI</span>
                     </button>
                     <button class="hub-icon" data-category="youtube" title="YouTube">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42A2.78 2.78 0 0 0 20.6 4.47C18.88 4 12 4 12 4s-6.88 0-8.6.47A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.53C5.12 20 12 20 12 20s6.88 0 8.6-.47a2.78 2.78 0 0 0 1.94-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22.54 6.42A2.78 2.78 0 0 0 20.6 4.47C18.88 4 12 4 12 4s-6.88 0-8.6.47A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.53C5.12 20 12 20 12 20s6.88 0 8.6-.47a2.78 2.78 0 0 0 1.94-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+                            <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+                        </svg>
                         <span>YT</span>
                     </button>
-                    <button class="hub-icon" data-category="logo" title="Logo">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <span>LOG</span>
-                    </button>
                     <button class="hub-icon" data-category="art" title="Art">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="13.5" cy="6.5" r=".5" />
+                            <circle cx="17.5" cy="10.5" r=".5" />
+                            <circle cx="8.5" cy="7.5" r=".5" />
+                            <circle cx="6.5" cy="12.5" r=".5" />
+                            <path
+                                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
+                        </svg>
                         <span>ART</span>
                     </button>
                     <button class="hub-icon" data-category="reels" title="Reels">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18" />
+                            <line x1="7" y1="2" x2="7" y2="22" />
+                            <line x1="17" y1="2" x2="17" y2="22" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <line x1="2" y1="7" x2="7" y2="7" />
+                            <line x1="2" y1="17" x2="7" y2="17" />
+                            <line x1="17" y1="17" x2="22" y2="17" />
+                            <line x1="17" y1="7" x2="22" y2="7" />
+                        </svg>
                         <span>RLS</span>
                     </button>
                     <button class="hub-icon" data-category="music" title="Music Videos">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M9 18V5l12-2v13" />
+                            <circle cx="6" cy="18" r="3" />
+                            <circle cx="18" cy="16" r="3" />
+                        </svg>
                         <span>MUS</span>
                     </button>
                     <button class="hub-icon" data-category="shop" title="Shop / Mogrts">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                            <line x1="3" y1="6" x2="21" y2="6" />
+                            <path d="M16 10a4 4 0 0 1-8 0" />
+                        </svg>
                         <span>SHOP</span>
                     </button>
                 </nav>
@@ -142,35 +188,45 @@
                         <span class="project-tag">Commercial</span>
                         <div class="card-hover-cta">VIEW ALL</div>
                     </div>
-                    <div class="minimal-info"><h3>Nike Speed</h3></div>
+                    <div class="minimal-info">
+                        <h3>Nike Speed</h3>
+                    </div>
                 </div>
                 <div class="minimal-card fade-in-up delay-2" data-category="music" data-open-hub="music">
                     <div class="minimal-thumb bg-gradient-music">
                         <span class="project-tag">Music Video</span>
                         <div class="card-hover-cta">VIEW ALL</div>
                     </div>
-                    <div class="minimal-info"><h3>Neon Souls</h3></div>
+                    <div class="minimal-info">
+                        <h3>Neon Souls</h3>
+                    </div>
                 </div>
                 <div class="minimal-card fade-in-up delay-1" data-category="youtube" data-open-hub="youtube">
                     <div class="minimal-thumb bg-gradient-yt">
                         <span class="project-tag">YouTube</span>
                         <div class="card-hover-cta">VIEW ALL</div>
                     </div>
-                    <div class="minimal-info"><h3>Tech Unboxed</h3></div>
+                    <div class="minimal-info">
+                        <h3>Tech Unboxed</h3>
+                    </div>
                 </div>
                 <div class="minimal-card fade-in-up delay-2" data-category="commercial" data-open-hub="logo">
                     <div class="minimal-thumb" style="background: linear-gradient(45deg, #1d976c, #93f9b9);">
                         <span class="project-tag">Custom Logo</span>
                         <div class="card-hover-cta">VIEW ALL</div>
                     </div>
-                    <div class="minimal-info"><h3>Vortex Esports Identity</h3></div>
+                    <div class="minimal-info">
+                        <h3>Vortex Esports Identity</h3>
+                    </div>
                 </div>
                 <div class="minimal-card fade-in-up delay-1" data-category="animation" data-open-hub="animation">
                     <div class="minimal-thumb" style="background: linear-gradient(45deg, #4b6cb7, #182848);">
                         <span class="project-tag">Animation</span>
                         <div class="card-hover-cta">VIEW ALL</div>
                     </div>
-                    <div class="minimal-info"><h3>Cinematic Channel Intro</h3></div>
+                    <div class="minimal-info">
+                        <h3>Cinematic Channel Intro</h3>
+                    </div>
                 </div>
                 <div class="minimal-card fade-in-up delay-2" data-category="shop" data-open-hub="shop">
                     <div class="minimal-thumb" style="background: linear-gradient(45deg, #ff9966, #ff5e62);">
@@ -197,7 +253,9 @@
                         <span class="project-tag">Reels / Shorts</span>
                         <div class="card-hover-cta">VIEW ALL</div>
                     </div>
-                    <div class="minimal-info"><h3>Gaming Reel 2024</h3></div>
+                    <div class="minimal-info">
+                        <h3>Gaming Reel 2024</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -267,7 +325,8 @@
                 <h2 class="huge-text-small">LET'S<br>TALK.</h2>
                 <p class="hire-status"><span class="status-dot"></span> Currently accepting new projects</p>
                 <div class="contact-details">
-                    <p>Whether you need a dynamic video campaign, an engaging YouTube edit, or a brand new logo, I'm ready to bring your vision to life.</p>
+                    <p>Whether you need a dynamic video campaign, an engaging YouTube edit, or a brand new logo, I'm
+                        ready to bring your vision to life.</p>
                 </div>
                 <a href="mailto:hello@example.com" class="minimal-email mt-2">hello@example.com</a>
                 <div class="social-minimal mt-2">
@@ -292,9 +351,29 @@
         </div>
     </section>
 
+    <!-- Video Display Modal -->
+    <div id="videoModal" class="video-modal">
+        <button id="closeVideoModal" class="close-video-modal">✕ CLOSE</button>
+        <button id="prevVideoModal" class="nav-video-modal prev">◀</button>
+        <button id="nextVideoModal" class="nav-video-modal next">▶</button>
+        <div class="video-modal-content" id="videoModalContent">
+            <video id="mainModalVideo" controls autoplay loop playsinline>
+                <source src="" id="mainModalSource" type="video/mp4">
+            </video>
+            <iframe id="youtubeIframe" src="" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen style="display:none; width:100%; height:100%;"></iframe>
+            <img id="mainModalImg" src="" style="display:none; width:100%; height:100%; object-fit:contain;" />
+            <div id="versionsContainer" class="versions-container">
+                <!-- Small unplayed version thumbs go here -->
+            </div>
+        </div>
+    </div>
+
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
 
     <script src="main.js"></script>
 </body>
+
 </html>
