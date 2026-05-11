@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
             filters: ['All', 'UGC Ads', 'Product Ads', 'SaaS', 'Corporate Brand Videos', 'Trailers'],
             items: [
                 {
-                    title: 'Nike Ad',
+                    title: 'Nike Ad2',
                     tag: 'Product Ads',
                     bg: 'linear-gradient(45deg, #2b5876, #4e4376)',
                     poster: 'IMG/Media/NikeFastAdVoca.png',
