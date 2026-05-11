@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     title: 'AntiGravity Intro (Rework)',
                     tag: 'Animation',
                     bg: '#111',
-                    poster: 'IMG/Logos/AntiGravity.jpg',
+                    poster: 'IMG/Logos/antiGravity.jpg',
                     video: 'https://youtube.com/shorts/adCad0sZMP0',
                     versions: ['https://youtube.com/shorts/adCad0sZMP0']
                 },
@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { title: 'Two Love', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', poster: 'IMG/Logos/twolove.jpg', },
                 { title: 'Counti2', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', poster: 'IMG/Logos/2animate.jpg', },
                 { title: 'ColorfY', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', poster: 'IMG/Logos/ColorfY.jpg', },
-                { title: 'AntiGravity (Rework)', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', poster: 'IMG/Logos/AntiGravity.jpg', },
+                { title: 'AntiGravity (Rework)', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', poster: 'IMG/Logos/antiGravity.jpg', },
                 { title: 'G-Orgo', tag: 'Logo', bg: 'linear-gradient(45deg, #f7971e, #ffd200)', poster: 'IMG/Logos/GO.jpg', },
                 { title: 'B Games', tag: 'Logo', bg: 'linear-gradient(45deg, #0f0c29, #302b63)', poster: 'IMG/Logos/JujutsuEyeLogo.jpg', },
             ]
