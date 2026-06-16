@@ -405,7 +405,32 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         }
     };
-
+    const ART_DATA = [
+    {
+        title: 'Morocco x Arcane Intro',
+        sub: 'Visual Art',
+        bg: 'linear-gradient(120deg, #f6d365, #fda085)',
+        poster: 'IMG/Media/MoroccoArcaneIntro.jpg',
+        video: 'https://www.youtube.com/watch?v=2kAwgv1BMv8',
+        size: 'large'
+    },
+    {
+        title: 'Aot Final Dose',
+        sub: 'Fantasy Edit',
+        bg: 'linear-gradient(135deg, #f6d365 0%, #fda085 100%)',
+        poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
+        video: 'https://youtu.be/pT9IZmD40Sk',
+        size: 'large'
+    },
+    {
+        title: 'Filmoda Keys',
+        sub: 'Brand Visual',
+        bg: 'linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%)',
+        poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
+        video: 'https://youtu.be/W2phw46niOM',
+        size: 'tall'
+    }
+];
     const MOGRTS_DATA = [
 
     ];
