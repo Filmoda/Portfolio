@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     title: 'Morocco x Arcane Intro',
                     tag: 'Art', bg: 'linear-gradient(120deg, #f6d365, #fda085)',
                     poster: 'IMG/Media/MoroccoArcaneIntro.jpg',
-                    video: 'https://youtu.be/2kAwgv1BMv8'
+                    video: 'https://www.youtube.com/watch?v=2kAwgv1BMv8'
                 },
                 {
                     title: 'Aot Final Dose',
