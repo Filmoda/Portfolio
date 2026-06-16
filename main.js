@@ -343,19 +343,23 @@ document.addEventListener('DOMContentLoaded', () => {
             items: [
                 {
                     title: 'Morocco x Arcane Intro',
-                    tag: 'Art', bg: 'linear-gradient(120deg, #f6d365, #fda085)',
+                    tag: 'Art', 
+                    bg: 'linear-gradient(120deg, #f6d365, #fda085)',
                     poster: 'IMG/Media/MoroccoArcaneIntro.jpg',
-                    video: 'https://www.youtube.com/watch?v=2kAwgv1BMv8'
+                    video: 'https://www.youtube.com/watch?v=2kAwgv1BMv8',
+                    size: 'large'
                 },
                 {
                     title: 'Aot Final Dose',
-                    tag: 'Art', bg: 'linear-gradient(120deg, #f6d365, #fda085)',
+                    tag: 'Art', 
+                    bg: 'linear-gradient(120deg, #f6d365, #fda085)',
                     poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
                     video: 'https://youtu.be/pT9IZmD40Sk'
                 },
                 {
                     title: 'Filmoda Keys',
-                    tag: 'Art', bg: 'linear-gradient(120deg, #f6d365, #fda085)',
+                    tag: 'Art', 
+                    bg: 'linear-gradient(120deg, #f6d365, #fda085)',
                     poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
                     video: 'https://youtu.be/W2phw46niOM'
                 },
