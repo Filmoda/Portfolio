@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         }, 10);
                     });
                 } else {
-                    // Open the corresponding hub category directly
                     openHub(filterValue);
                 }
             });
@@ -230,10 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     bg: '#111',
                     poster: 'IMG/Logos/Filmoda.jpg',
                     video: 'https://youtu.be/MyT1gnJpnII',
-                    versions: ['https://youtu.be/MyT1gnJpnII',
-                        'https://youtu.be/WGPTZSUJABE',
-                        'https://youtu.be/3_czaDVTWLk'
-                    ]
+                    versions: ['https://youtu.be/MyT1gnJpnII', 'https://youtu.be/WGPTZSUJABE', 'https://youtu.be/3_czaDVTWLk']
                 },
                 {
                     title: 'Number 2 Animate',
@@ -249,9 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     bg: '#111',
                     poster: 'IMG/Logos/ColorfY.jpg',
                     video: 'https://youtu.be/H5JBIq2Dae8',
-                    versions: ['https://youtu.be/H5JBIq2Dae8',
-                        'https://youtu.be/g30ESQVCtwI'
-                    ]
+                    versions: ['https://youtu.be/H5JBIq2Dae8', 'https://youtu.be/g30ESQVCtwI']
                 },
                 {
                     title: 'B Games',
@@ -259,8 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     bg: '#111',
                     poster: 'IMG/Logos/JujutsuEyeLogo.jpg',
                     video: 'https://youtu.be/IxE3TR7PaZ4',
-                    versions: ['https://youtu.be/IxE3TR7PaZ4',
-                        'https://youtu.be/fpxK-nvLZkU']
+                    versions: ['https://youtu.be/IxE3TR7PaZ4', 'https://youtu.be/fpxK-nvLZkU']
                 },
                 {
                     title: 'G-Orgo Logo',
@@ -276,11 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     bg: '#111',
                     poster: 'IMG/Logos/twolove.jpg',
                     video: 'https://youtu.be/71TBaXYBjYs',
-                    versions: [
-                        'https://youtu.be/71TBaXYBjYs',
-                        'https://youtu.be/Q6vkRAlyO9s',
-                        'https://youtu.be/xRqQK6Fnzzk'
-                    ]
+                    versions: ['https://youtu.be/71TBaXYBjYs', 'https://youtu.be/Q6vkRAlyO9s', 'https://youtu.be/xRqQK6Fnzzk']
                 }
             ]
         },
@@ -323,19 +312,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     poster: 'IMG/Media/AfriquiaPourcentage.png',
                     video: 'https://youtu.be/hwKcyZzpVJs'
                 },
-
             ]
         },
         logo: {
             label: 'Logo & Brand',
             items: [
-                { title: 'Filmoda', tag: 'Logo', bg: 'linear-gradient(45deg, #1d976c, #93f9b9)', poster: 'IMG/Logos/Filmoda.jpg', },
-                { title: 'Two Love', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', poster: 'IMG/Logos/twolove.jpg', },
-                { title: 'Counti2', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', poster: 'IMG/Logos/2animate.jpg', },
-                { title: 'ColorfY', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', poster: 'IMG/Logos/ColorfY.jpg', },
-                { title: 'AntiGravity (Rework)', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', poster: 'IMG/Logos/antigravity.jpg', },
-                { title: 'G-Orgo', tag: 'Logo', bg: 'linear-gradient(45deg, #f7971e, #ffd200)', poster: 'IMG/Logos/GO.jpg', },
-                { title: 'B Games', tag: 'Logo', bg: 'linear-gradient(45deg, #0f0c29, #302b63)', poster: 'IMG/Logos/JujutsuEyeLogo.jpg', },
+                { title: 'Filmoda', tag: 'Logo', bg: 'linear-gradient(45deg, #1d976c, #93f9b9)', poster: 'IMG/Logos/Filmoda.jpg' },
+                { title: 'Two Love', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', poster: 'IMG/Logos/twolove.jpg' },
+                { title: 'Counti2', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', poster: 'IMG/Logos/2animate.jpg' },
+                { title: 'ColorfY', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', poster: 'IMG/Logos/ColorfY.jpg' },
+                { title: 'AntiGravity (Rework)', tag: 'Logo', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)', poster: 'IMG/Logos/antigravity.jpg' },
+                { title: 'G-Orgo', tag: 'Logo', bg: 'linear-gradient(45deg, #f7971e, #ffd200)', poster: 'IMG/Logos/GO.jpg' },
+                { title: 'B Games', tag: 'Logo', bg: 'linear-gradient(45deg, #0f0c29, #302b63)', poster: 'IMG/Logos/JujutsuEyeLogo.jpg' },
             ]
         },
         art: {
@@ -343,27 +331,25 @@ document.addEventListener('DOMContentLoaded', () => {
             items: [
                 {
                     title: 'Morocco x Arcane Intro',
-                    tag: 'Art', 
+                    tag: 'Art',
                     bg: 'linear-gradient(120deg, #f6d365, #fda085)',
                     poster: 'IMG/Media/MoroccoArcaneIntro.jpg',
-                    video: 'https://www.youtube.com/watch?v=2kAwgv1BMv8',
-                    size: 'large'
+                    video: 'https://www.youtube.com/watch?v=2kAwgv1BMv8'
                 },
                 {
                     title: 'Aot Final Dose',
-                    tag: 'Art', 
+                    tag: 'Art',
                     bg: 'linear-gradient(120deg, #f6d365, #fda085)',
                     poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
                     video: 'https://youtu.be/pT9IZmD40Sk'
                 },
                 {
                     title: 'Filmoda Keys',
-                    tag: 'Art', 
+                    tag: 'Art',
                     bg: 'linear-gradient(120deg, #f6d365, #fda085)',
                     poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
                     video: 'https://youtu.be/W2phw46niOM'
                 },
-
             ]
         },
         reels: {
@@ -384,7 +370,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     poster: 'IMG/Media/IslamicRamadan.png',
                     video: 'https://youtube.com/shorts/0ud6Y6nFQ7U'
                 },
-
             ]
         },
         music: {
@@ -405,47 +390,28 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         }
     };
-    const ART_DATA = [
-            {
-            title: 'Morocco x Arcane Intro',
-            sub: 'Visual Art',
-            bg: 'linear-gradient(120deg, #f6d365, #fda085)',
-            poster: 'IMG/Media/MoroccoArcaneIntro.jpg',
-            video: 'https://www.youtube.com/watch?v=2kAwgv1BMv8',
-            size: 'large'
-            },
-            {
-            title: 'Aot Final Dose',
-            sub: 'Fantasy Edit',
-            bg: 'linear-gradient(135deg, #f6d365 0%, #fda085 100%)',
-            poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
-            video: 'https://youtu.be/pT9IZmD40Sk',
-            size: 'large'
-            },
-            {
-            title: 'Filmoda Keys',
-            sub: 'Brand Visual',
-            bg: 'linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%)',
-            poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
-            video: 'https://youtu.be/W2phw46niOM',
-            size: 'tall'
-            }
-        ];
-    const MOGRTS_DATA = [
 
-    ];
+    const MOGRTS_DATA = [];
 
     /* =========================================
        Art Gallery Data & Render
        ========================================= */
     const ART_DATA = [
         {
+            title: 'Morocco x Arcane Intro',
+            sub: 'Visual Art',
+            bg: 'linear-gradient(120deg, #f6d365, #fda085)',
+            poster: 'IMG/Media/MoroccoArcaneIntro.jpg',
+            video: 'https://www.youtube.com/watch?v=2kAwgv1BMv8',
+            size: 'large'
+        },
+        {
             title: 'Aot Final Dose',
             sub: 'Fantasy Edit',
             bg: 'linear-gradient(135deg, #f6d365 0%, #fda085 100%)',
             poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
             video: 'https://youtu.be/pT9IZmD40Sk',
-            size: 'large'   // spans 2 cols, 2 rows
+            size: 'large'
         },
         {
             title: 'Filmoda Keys',
@@ -453,7 +419,7 @@ document.addEventListener('DOMContentLoaded', () => {
             bg: 'linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%)',
             poster: 'videos/Animations/Filmoda Animation/Filmoda.jpg',
             video: 'https://youtu.be/W2phw46niOM',
-            size: 'tall'    // 1 col, 2 rows
+            size: 'tall'
         }
     ];
 
@@ -515,7 +481,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (artLbTotal) artLbTotal.textContent = ART_DATA.length;
 
         ART_DATA.forEach((piece, i) => {
-            // Slide
             const slide = document.createElement('div');
             slide.className = 'art-lb-slide';
 
@@ -533,11 +498,11 @@ document.addEventListener('DOMContentLoaded', () => {
             slide.innerHTML = `
                 <div class="art-lb-media">
                     ${isYT && ytId
-                    ? `<iframe class="art-lb-iframe" src="" data-src="https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-                    : piece.video
-                        ? `<video class="art-lb-video" src="${piece.video}" controls autoplay loop playsinline></video>`
-                        : `<img class="art-lb-img" src="${piece.poster}" alt="${piece.title}">`
-                }
+                        ? `<iframe class="art-lb-iframe" src="" data-src="https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+                        : piece.video
+                            ? `<video class="art-lb-video" src="${piece.video}" controls autoplay loop playsinline></video>`
+                            : `<img class="art-lb-img" src="${piece.poster}" alt="${piece.title}">`
+                    }
                 </div>
                 <div class="art-lb-info">
                     <span class="art-lb-tag">${piece.sub}</span>
@@ -546,7 +511,6 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             artLbTrack.appendChild(slide);
 
-            // Dot
             const dot = document.createElement('button');
             dot.className = 'art-lb-dot' + (i === 0 ? ' active' : '');
             dot.addEventListener('click', () => goToArtSlide(i));
@@ -558,7 +522,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const slides = artLbTrack.querySelectorAll('.art-lb-slide');
         const dots = artLbDots.querySelectorAll('.art-lb-dot');
 
-        // Pause old media
         if (pauseOld) {
             const old = slides[artLbIndex];
             if (old) {
@@ -572,15 +535,12 @@ document.addEventListener('DOMContentLoaded', () => {
         artLbIndex = Math.max(0, Math.min(index, ART_DATA.length - 1));
         artLbTrack.style.transform = `translateX(-${artLbIndex * 100}%)`;
 
-        // Update counter & dots
         if (artLbCurrent) artLbCurrent.textContent = artLbIndex + 1;
         dots.forEach((d, i) => d.classList.toggle('active', i === artLbIndex));
 
-        // Show arrow visibility
         if (artLbPrev) artLbPrev.style.opacity = artLbIndex === 0 ? '0.2' : '1';
         if (artLbNext) artLbNext.style.opacity = artLbIndex === ART_DATA.length - 1 ? '0.2' : '1';
 
-        // Activate iframe src (lazy load)
         const current = slides[artLbIndex];
         if (current) {
             const ifr = current.querySelector('iframe[data-src]');
@@ -597,13 +557,11 @@ document.addEventListener('DOMContentLoaded', () => {
         buildArtLightbox();
         artLightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
-        // Small delay so transition plays
         setTimeout(() => goToArtSlide(index, false), 50);
     }
 
     function closeArtLightbox() {
         if (!artLightbox) return;
-        // Stop all media
         artLbTrack.querySelectorAll('video').forEach(v => v.pause());
         artLbTrack.querySelectorAll('iframe').forEach(f => { f.src = ''; });
         artLightbox.classList.remove('active');
@@ -614,7 +572,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (artLbPrev) artLbPrev.addEventListener('click', () => goToArtSlide(artLbIndex - 1));
     if (artLbNext) artLbNext.addEventListener('click', () => goToArtSlide(artLbIndex + 1));
 
-    // Keyboard
     document.addEventListener('keydown', (e) => {
         if (!artLightbox || !artLightbox.classList.contains('active')) return;
         if (e.key === 'ArrowLeft') goToArtSlide(artLbIndex - 1);
@@ -622,7 +579,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'Escape') closeArtLightbox();
     });
 
-    // Touch / mouse swipe
     if (artLbTrack) {
         artLbTrack.addEventListener('pointerdown', (e) => {
             artLbDragging = true;
@@ -660,7 +616,6 @@ document.addEventListener('DOMContentLoaded', () => {
         hub.classList.add('active');
         document.body.style.overflow = 'hidden';
 
-        // Sync sidebar icon
         hubIcons.forEach(icon => {
             icon.classList.toggle('active', icon.dataset.category === currentCategory);
         });
@@ -675,7 +630,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = HUB_DATA[category];
         if (!data) return;
 
-        // Update header
         hubLabel.textContent = data.label;
 
         const hubFiltersContainer = document.getElementById('hubFilters');
@@ -704,14 +658,12 @@ document.addEventListener('DOMContentLoaded', () => {
             displayItems = data.items.filter(item => item.tag === activeFilter);
         }
 
-        // Transition grid out
         if (animate) {
             hubGrid.style.opacity = '0';
             hubGrid.style.transform = 'translateY(10px)';
         }
 
         setTimeout(() => {
-            // Render project cards
             hubGrid.innerHTML = '';
             if (displayItems.length === 0) {
                 hubGrid.innerHTML = `<div class="hub-empty-state"><span class="hub-empty-icon">🎬</span><p>0 projects</p><span>Coming soon.</span></div>`;
@@ -769,7 +721,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 hubGrid.appendChild(card);
             });
 
-            // Show / hide Mogrts section
             if (isShop) {
                 mogrtsSection.style.display = 'block';
                 renderMogrts();
@@ -779,7 +730,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 hubCount.textContent = `${displayItems.length} project${displayItems.length !== 1 ? 's' : ''}`;
             }
 
-            // Animate grid in
             hubGrid.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
             hubGrid.style.opacity = '1';
             hubGrid.style.transform = 'translateY(0)';
@@ -809,7 +759,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Sidebar icon clicks → switch category
     hubIcons.forEach(icon => {
         icon.addEventListener('click', () => {
             const cat = icon.dataset.category;
@@ -821,7 +770,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Open hub from main grid cards
     document.querySelectorAll('.minimal-card[data-open-hub]').forEach(card => {
         card.addEventListener('click', () => {
             const cat = card.getAttribute('data-open-hub');
@@ -829,18 +777,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Close button
     if (closeHubBtn) {
         closeHubBtn.addEventListener('click', closeHub);
     }
 
-
-
     /* =========================================
        Unified Project Lightbox
-       (replaces old video modal for all hub categories)
        ========================================= */
-
     function extractYouTubeId(url) {
         if (!url) return null;
         if (url.includes('youtu.be/')) return url.split('youtu.be/')[1].split('?')[0];
@@ -849,7 +792,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return null;
     }
 
-    // ---- DOM refs ----
     const plBox = document.getElementById('projectLightbox');
     const plClose = document.getElementById('plClose');
     const plPrev = document.getElementById('plPrev');
@@ -867,7 +809,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let plDragStart = 0;
     let plDragging = false;
 
-    // ---- helpers ----
     function plStopMedia() {
         if (!plMediaWrap) return;
         plMediaWrap.querySelectorAll('video').forEach(v => { v.pause(); v.src = ''; });
@@ -879,13 +820,11 @@ document.addEventListener('DOMContentLoaded', () => {
         plStopMedia();
         plMediaWrap.innerHTML = '';
 
-        // portrait for reels/shorts, landscape for everything else
         const isShort = src && src.includes('youtube.com/shorts/');
         const isReel = item.tag === 'Reels' || item.tag === 'Cinematic Shorts' || isShort;
         plMediaWrap.dataset.ratio = isReel ? 'portrait' : 'landscape';
 
         if (!src) {
-            // image-only (logo without video)
             if (item.poster) {
                 const img = document.createElement('img');
                 img.src = item.poster;
@@ -919,7 +858,6 @@ document.addEventListener('DOMContentLoaded', () => {
             plMediaWrap.appendChild(vid);
         }
 
-        // update version strip active state
         if (plVersions) {
             plVersions.querySelectorAll('.pl-ver-thumb').forEach((t, i) => {
                 t.classList.toggle('active', i === verIdx);
@@ -965,29 +903,24 @@ document.addEventListener('DOMContentLoaded', () => {
         plVerIndex = 0;
         const item = plItems[plIndex];
 
-        // counter
         if (plCounter) plCounter.textContent = plIndex + 1;
         if (plTotal) plTotal.textContent = plItems.length;
 
-        // meta
         if (plTag) plTag.textContent = item.tag || '';
         if (plTitle) plTitle.textContent = item.title || '';
 
-        // arrows
         if (plPrev) plPrev.style.opacity = plIndex === 0 ? '0.2' : '1';
         if (plNext) plNext.style.opacity = plIndex === plItems.length - 1 ? '0.2' : '1';
 
-        // versions strip
         plBuildVersions(item);
 
-        // media — first version or main video
         const mainSrc = item.versions && item.versions.length > 0 ? item.versions[0] : (item.video || null);
         plPlaySrc(item, mainSrc, 0);
     }
 
     function openVideoModal(items, index) {
         if (!plBox) return;
-        plItems = items.filter(it => it.video || it.poster); // skip empty
+        plItems = items.filter(it => it.video || it.poster);
         plBox.classList.add('active');
         document.body.style.overflow = 'hidden';
         plLoad(index);
@@ -1004,7 +937,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (plPrev) plPrev.addEventListener('click', () => plLoad(plIndex - 1));
     if (plNext) plNext.addEventListener('click', () => plLoad(plIndex + 1));
 
-    // swipe
     if (plBox) {
         plBox.addEventListener('pointerdown', (e) => {
             if (e.target.closest('.pl-ver-thumb, .pl-close-btn, .pl-arrow, video, iframe, img')) return;
@@ -1019,7 +951,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // keyboard — also handle ESC for hub
     document.addEventListener('keydown', (e) => {
         if (plBox && plBox.classList.contains('active')) {
             if (e.key === 'ArrowLeft') plLoad(plIndex - 1);
